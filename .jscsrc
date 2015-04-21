@@ -1,0 +1,255 @@
+{
+    "fileExtensions": [".js"],
+    
+    //匿名函数
+    //"disallowAnonymousFunctions": false,
+    
+    //禁止大些注释
+    //"disallowCapitalizedComments": false,
+    
+    //禁止逗号在换行前
+    //"disallowCommaBeforeLineBreak": false,
+    "requireCommaBeforeLineBreak": true,
+    
+    // 数组内的关键字后面不允许跟中括号
+    //"disallowCurlyBraces": [],
+    "requireCurlyBraces": [
+        "if",
+        "else",
+        "for",
+        "while",
+        "do",
+        "try",
+        "catch"
+    ],
+    
+    // 不允许下划线
+    //"disallowDanglingUnderscores": {},
+    
+    //禁止空块级
+    "disallowEmptyBlocks": true,
+    
+    // 禁止声明函数(??我擦)
+    //"disallowFunctionDeclarations": false,
+    
+    // 数组内的关键字不允许使用
+    //"disallowIdentifierNames": [],
+    
+    //禁止含蓄的类型转换, 如["numeric"], 就禁止 +"0" 转数字类型
+    //"disallowImplicitTypeConversion": [],
+    
+    //"disallowKeywordsInComments": [],
+    
+    //禁止这些关键字出现在新行, 如["else"], 就不允许else出现在一个新行
+    //"disallowKeywordsOnNewLine": [],
+    "requireKeywordsOnNewLine": ["else","catch","finally"],
+    
+    "disallowKeywords": ["with", "eval"],
+    
+    "disallowMixedSpacesAndTabs": true,
+    
+    //禁止多个空行
+    //"disallowMultipleLineBreaks": false,
+    
+    //不允许换行字符串
+    "disallowMultipleLineStrings": true,
+
+    //禁止关键字旁边有多个空格
+    "disallowMultipleSpaces": true,
+
+    //禁止一个var声明多个变量
+    "disallowMultipleVarDecl": true,
+
+    //禁止块级作用域起新行
+    "disallowNewlineBeforeBlockStatements": true,
+
+    // 换行前必须保留操作符
+    //"requireOperatorBeforeLineBreak":[],
+
+    //不允许操作符在换行前
+    "disallowOperatorBeforeLineBreak": [
+        "+", 
+        ".",
+        "&&",
+        "||",
+        // "?",
+        "=",
+        "+",
+        "-",
+        "/",
+        "*",
+        "==",
+        "===",
+        "!=",
+        "!==",
+        ">",
+        ">=",
+        "<",
+        "<="
+    ],
+
+    //块级作用域内不允许缩进
+    //"disallowPaddingNewLinesAfterBlocks": false,
+
+    //这些关键字后面不允许空行
+    //"disallowPaddingNewlinesBeforeKeywords": [],
+
+    //注释前不许空行
+    //"disallowPaddingNewLinesBeforeLineComments": false,
+
+    //对象不允许起空行
+    //"disallowPaddingNewLinesInObjects": false,
+
+    //禁止声明对象的key用引号包裹
+    //"disallowQuotedKeysInObjects": false,
+
+    //行尾禁止分号
+    //disallowSemicolons: false,
+    "requireSemicolons": true,
+
+    //这些操作符后不允许空格
+    //"disallowSpaceAfterBinaryOperators": [],
+    "requireSpaceAfterBinaryOperators": [
+        "=",
+        ",",
+        "+",
+        "-",
+        "/",
+        "*",
+        "==",
+        "===",
+        "!=",
+        "!=="
+    ],
+    "requireSpaceBeforeBinaryOperators": [
+        "=",
+        "+",
+        "-",
+        "/",
+        "*",
+        "==",
+        "===",
+        "!=",
+        "!=="
+    ],
+
+    // 这些关键字以后不允许空格
+    //"disallowSpaceAfterKeywords": [],
+    "requireSpaceAfterKeywords": [
+        "do",
+        "for",
+        "if",
+        "else",
+        "switch",
+        "case",
+        "try",
+        "catch",
+        "void",
+        "while",
+        "with",
+        "return",
+        "typeof",
+        "function"
+    ],
+
+    "disallowSpaceAfterObjectKeys": "ignoreSingleLine",
+
+    //这些操作符后不允许空格
+    "disallowSpaceAfterPrefixUnaryOperators": ["++", "--", "+", "-", "~", "!"],
+
+    //块级前空格
+    "requireSpaceBeforeBlockStatements": true,
+
+    "requireSpaceBeforeObjectValues": true,
+
+    //后操作符前不允许空格 '1 ++' 非法
+    "disallowSpaceBeforePostfixUnaryOperators": ["++", "--"],
+
+    //调用前不允许空格 fun()
+    "disallowSpacesInCallExpression": true,
+
+    //
+    "requireSpacesInConditionalExpression": {
+        "afterTest": true,
+        "beforeConsequent": true,
+        "afterConsequent": true,
+        "beforeAlternate": true
+    },
+
+    "requireSpacesInForStatement": true,
+
+    "requireCurlyBraces": [ "if", "else", "for", "while", "do" ],
+
+    "disallowSpacesInsideParentheses": true,
+
+    "disallowTrailingComma": true,
+
+    "disallowTrailingWhitespace": true,
+
+    "maximumLineLength": 120,
+
+    "requireBlocksOnNewline": true,
+
+    "requireCamelCaseOrUpperCaseIdentifiers": true,
+
+    "requireDotNotation": true,
+
+    // 这两条涵盖匿名、非匿名函数！与下面的各自配置冲突！
+    // "disallowSpacesInFunctionDeclaration": {
+    //     "beforeOpeningRoundBrace": true
+    //     // "beforeOpeningCurlyBrace": true
+    // },
+
+    // "requireSpacesInFunctionDeclaration": { 
+    //     "beforeOpeningCurlyBrace": true
+    //     // "beforeOpeningRoundBrace": true
+    // }
+    // ,
+
+    // "requireSpacesInFunctionExpression": {
+    //     //"beforeOpeningRoundBrace": true,
+    //     "beforeOpeningCurlyBrace": true
+    // },
+    // "disallowSpacesInFunctionExpression": {
+    //     "beforeOpeningRoundBrace": true
+    // },
+    
+    // 匿名表达式圆括号，中括号前需要空格
+    "requireSpacesInAnonymousFunctionExpression": {
+        "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    },
+
+    "disallowSpacesInNamedFunctionExpression": {
+        "beforeOpeningRoundBrace": true
+        // "beforeOpeningCurlyBrace": true
+    },
+
+    "requireSpacesInNamedFunctionExpression": {
+        // "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    },
+
+    // 匿名函数必须包圆括号
+    "requireParenthesesAroundIIFE": true,
+
+    // 这些关键字前需空格
+    "requireSpaceBeforeKeywords": [],
+
+    //对象的value前需空格
+    "requireSpaceBeforeObjectValues": true,
+
+    //函数声明参数时需空格 function foo(a, b)
+    "requireSpaceBetweenArguments": true,
+
+    "requireSpacesInConditionalExpression": {
+        "afterTest": true,
+        "beforeConsequent": true,
+        "afterConsequent": true,
+        "beforeAlternate": true
+    },
+
+    "safeContextKeyword": ["that"],
+
+    "validateParameterSeparator": ", "
+}
